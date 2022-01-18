@@ -19,7 +19,9 @@ const ingredients: Ingredient[] = [
 function App() {
     return (
         <ul>
-        <IngredientItem ingredient={ingredients[0]}></IngredientItem>
+            {ingredients.map((ingredient) => {
+                return <IngredientItem ingredient={ingredient}></IngredientItem>
+            })}
         </ul>
     );
 }
