@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Ingredient } from "../../interfaces/Ingredient"
+import { Ingredient } from "../../interfaces/Ingredient";
+
+import "./IngredientItem.css";
 
 function IngredientItem(props: { ingredient: Ingredient }) {
     const [checked, setChecked] = useState(false);
@@ -17,7 +19,7 @@ function IngredientItem(props: { ingredient: Ingredient }) {
              />
             <span>{props.ingredient.text}</span>
             <br/>
-            <span>Is {props.ingredient.text} selected:{"" + checked}</span>
+            <span>Is {props.ingredient.text} selected: <span className={(checked) ? 'blue': 'red'}>{"" + checked}</span></span>
         </div>
     )
 }
