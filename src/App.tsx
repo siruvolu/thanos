@@ -1,14 +1,14 @@
-import React from 'react'
-import { IngredientItem } from './IngredientItem'
+import IngredientItem from './components/IngredientItem/IngredientItem';
+import { Ingredient } from './interfaces/Ingredient';
 
 const ingredients: Ingredient[] = [
     {
         text: 'Garlic',
-        selected: True,
+        selected: true,
     },
     {
         text: 'Ginger',
-        selected: True,
+        selected: true,
     },
     {
         text: 'Corriander',
@@ -19,9 +19,7 @@ const ingredients: Ingredient[] = [
 function App() {
     return (
         <ul>
-        <IngredientItem ingredient={ingredients[0]} />
-        <IngredientItem ingredient={ingredients[1]} />
-        <IngredientItem ingredient={ingredients[2]} />
+        <IngredientItem></IngredientItem>
         </ul>
     );
 }
