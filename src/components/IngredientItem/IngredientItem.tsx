@@ -7,7 +7,6 @@ function IngredientItem(props: { ingredient: Ingredient }) {
     const [checked, setChecked] = useState(false);
 
     const handleChange = () => {
-        console.log(!checked);
         setChecked(!checked);
     }
     return (
