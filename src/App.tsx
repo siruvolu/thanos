@@ -19,7 +19,7 @@ const ingredients: Ingredient[] = [
 function App() {
     return (
         <ul>
-        <IngredientItem></IngredientItem>
+        <IngredientItem ingredient={ingredients[0]}></IngredientItem>
         </ul>
     );
 }
